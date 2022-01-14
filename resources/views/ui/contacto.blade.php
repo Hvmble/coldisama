@@ -1,5 +1,5 @@
-<aside class="md:w-2/5 bg-teal-500 p-5 rounded m-3">
-    <h2 class="text-2xl my-5 text-white uppercase font-bold text-center">Contacta al Reclutador</h2>
+<aside class="md:w-2/5 bg-blue-600 p-5 rounded m-3">
+    <h2 class="text-2xl my-5 text-white uppercase font-bold text-center">Enviar Hoja de Vida</h2>
 
     <form enctype="multipart/form-data" action="{{route('candidatos.store')}}" method="POST">
         @csrf
@@ -46,12 +46,12 @@
 
         <div class="mb-4">
             <label for="cv" class="block text-white text-sm font-bold mb-4">
-                Curriculum (PDF):
+                Hoja de Vida (PDF):
             </label>
             <input
                 id="cv"
                 type="file"
-                class="p-3 rounded form-input w-full @error('cv') border border-red-500  @enderror"
+                class="p-3 rounded  form-input w-full @error('cv') border border-red-500  @enderror"
                 name="cv"
                 accept="application/pdf"
             />
@@ -67,8 +67,8 @@
 
         <input
             type="submit"
-            class="bg-teal-600 w-full hover:bg-teal-700 text-gray-100 p-3 focus:outline-none focus:shadow-outline uppercase"
-            value="Contactar">
+            class="bg-green-500 w-full hover:bg-green-400 text-gray-100 p-3 cursor-pointer uppercase"
+            value="Enviar">
 
     </form>
 </aside>

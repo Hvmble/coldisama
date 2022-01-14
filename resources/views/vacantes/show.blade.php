@@ -19,7 +19,7 @@
 
             <p class="block text-gray-700 font-bold my-2">
                 Publicado <span class="font-normal"> {{$vacante->created_at->diffForHumans() }}  </span>
-                por: <span class="font-normal"> {{$vacante->reclutador->name}} </span>
+                por: <span class="font-normal uppercase"> {{$vacante->reclutador->name}} </span>
             </p>
             <p class="block text-gray-700 font-bold my-2">
                 Categoría: <span class="font-normal"> {{$vacante->categoria->nombre}} </span>
@@ -35,7 +35,7 @@
             </p>
 
 
-            <h2 class="text-2xl text-center mt-10 text-gray-700 mb-5">Conocimientos y Tecnologías</h2>
+            <h2 class="text-2xl text-center mt-10 text-gray-700 mb-5">Conocimientos y Habilidades</h2>
 
             @php
                 $arraySkills = explode(",", $vacante->skills)
@@ -47,11 +47,12 @@
              </p>
             @endforeach
 
-            <a href="/storage/vacantes/{{$vacante->imagen}}" data-lightbox="imagen" data-title="Vacante {{ $vacante->titulo}} ">
-                <img src="/storage/vacantes/{{ $vacante->imagen }}" class="w-40 mt-10">
+            <a href="/public/storage/vacantes/{{$vacante->imagen}}"  data-lightbox="imagen" data-title="Vacante {{ $vacante->titulo}} ">
+                <img  src="/public/storage/vacantes/{{ $vacante->imagen }}" class="w-40 h-50 mt-10 mx-40">
             </a>
 
-            <div class="descripcion mt-10 mb-5">
+            <div class="descripcion  bg-gray-200 border-2 mt-10 p-2 mb-5">
+                <h2>Funciones a Realizar</h2>
                 {!! $vacante->descripcion  !!}
             </div>
         </div>

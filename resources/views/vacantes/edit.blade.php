@@ -223,7 +223,7 @@
             >Habilidades y Conocimientos: <span class="text-xs">(Elige al menos 3)</span> </label>
 
             @php
-                $skills = ['HTML5', 'CSS3', 'CSSGrid', 'Flexbox', 'JavaScript', 'jQuery', 'Node', 'Angular', 'VueJS', 'ReactJS', 'React Hooks', 'Redux', 'Apollo', 'GraphQL', 'TypeScript', 'PHP', 'Laravel', 'Symfony', 'Python', 'Django', 'ORM', 'Sequelize', 'Mongoose', 'SQL', 'MVC', 'SASS', 'WordPress', 'Express', 'Deno', 'React Native', 'Flutter', 'MobX', 'C#', 'Ruby on Rails']
+            $skills = ['Jardinero', 'Construcción', 'Electricista']
             @endphp
             <lista-skills
                 :skills="{{ json_encode($skills) }}"
@@ -240,7 +240,7 @@
 
         <button
             type="submit"
-            class="bg-teal-500 w-full hover:bg-teal-600 text-gray-100 font-bold p-3 focus:outline focus:shadow-outline uppercase"
+            class="bg-green-600 w-full hover:bg-green-500 text-gray-100 font-bold p-3 focus:outline focus:shadow-outline uppercase"
         >Publicar Vacante</button>
     </form>
 
@@ -299,7 +299,7 @@
                        imagenPublicada.nombreServidor = document.querySelector('#imagen').value;
 
                        this.options.addedfile.call(this, imagenPublicada);
-                       this.options.thumbnail.call(this, imagenPublicada, `/storage/vacantes/${imagenPublicada.name}`);
+                       this.options.thumbnail.call(this, imagenPublicada, `/public/storage/vacantes/${imagenPublicada.name}`);
 
                        imagenPublicada.previewElement.classList.add('dz-sucess');
                        imagenPublicada.previewElement.classList.add('dz-complete');

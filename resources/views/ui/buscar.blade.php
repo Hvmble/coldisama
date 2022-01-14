@@ -1,4 +1,3 @@
-<h2 class="my-10 text-2xl text-gray-700">Busca una vacante</h2>
 
 <form
     action={{ route('vacantes.buscar')}}
@@ -76,7 +75,7 @@
 
     <button
         type="submit"
-        class="bg-teal-500 w-full hover:bg-teal-600 text-gray-100 font-bold
+        class="bg-blue-600 w-full hover:bg-blue-400 text-gray-100 font-bold
         p-3 focus:outline-none focus:shadow-outline uppercase mt-10"
     >
         Buscar Vacantes

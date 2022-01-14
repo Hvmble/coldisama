@@ -14,45 +14,28 @@ class CategoriaSeed extends Seeder
     public function run()
     {
         DB::table('categorias')->insert([
-            'nombre' => 'Front End',
+            'nombre' => 'DOCENTES DE PRIMARIA',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
         
         DB::table('categorias')->insert([
-            'nombre' => 'Backend',
+            'nombre' => 'DOCENTES DE BACHILLER',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'Full Stack',
+            'nombre' => 'ADMINISTRATIVOS',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         DB::table('categorias')->insert([
-            'nombre' => 'DevOps',
+            'nombre' => 'OPERARIOS',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
-
-        DB::table('categorias')->insert([
-            'nombre' => 'DBA',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-
-        DB::table('categorias')->insert([
-            'nombre' => 'UX / UI',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-
-        DB::table('categorias')->insert([
-            'nombre' => 'Techlead',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
+        
     }
 }

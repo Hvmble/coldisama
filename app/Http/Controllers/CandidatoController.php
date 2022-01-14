@@ -68,7 +68,7 @@ class CandidatoController extends Controller
         {
             $archivo = $request->file('cv');
             $nombreArchivo = time() . "." . $request->file('cv')->extension();
-            $ubicacion = public_path('/storage/cv');
+            $ubicacion = public_path('public/storage/cv');
             $archivo->move($ubicacion, $nombreArchivo);
         }
 

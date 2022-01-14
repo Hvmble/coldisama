@@ -68,7 +68,7 @@ class VacanteController extends Controller
             'ubicacion' => 'required',
             'salario' => 'required',
             'descripcion' => 'required|min:50',
-            'imagen' => 'required',
+            'imagen' => '',
             'skills' => 'required'
         ]);
 
@@ -148,7 +148,7 @@ class VacanteController extends Controller
             'experiencia' => 'required',
             'ubicacion' => 'required',
             'salario' => 'required',
-            'descripcion' => 'required|min:50',
+            'descripcion' => 'required|min:30',
             'imagen' => 'required',
             'skills' => 'required'
         ]);
@@ -197,7 +197,7 @@ class VacanteController extends Controller
     {
         $imagen = $request->file('file');
         $nombreImagen = time() . '.' . $imagen->extension();
-        $imagen->move(public_path('storage/vacantes'), $nombreImagen );
+        $imagen->move(public_path('public/storage/vacantes'), $nombreImagen );
         return response()->json(['correcto' => $nombreImagen]);
     }
 
@@ -207,8 +207,8 @@ class VacanteController extends Controller
         if($request->ajax()) {
             $imagen = $request->get('imagen');
 
-            if( File::exists( 'storage/vacantes/' . $imagen ) ) {
-                File::delete( 'storage/vacantes/' . $imagen );
+            if( File::exists( '/public/storage/vacantes' . $imagen ) ) {
+                File::delete( '/public/storage/vacantes' . $imagen );
             }
 
             return response('Imagen Eliminada', 200);

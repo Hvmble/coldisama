@@ -5,13 +5,10 @@
 <div class="container mx-auto">
     <div class="flex flex-wrap justify-center">
         <div class="w-full max-w-sm">
-            <div class="flex flex-col break-words bg-white border border-2 shadow-md mt-20">
-                    <div class="bg-gray-300 text-gray-700 uppercase text-center py-3 px-6 mb-0">
+            <div class="flex flex-col break-words bg-white rounded-lg  border-2 shadow-md mt-20">
+                    <div class="text-gray-100 rounded-t-lg bg-blue-600 uppercase text-center py-3 px-6 mb-0">
                         {{ __('Reset Password') }}
                     </div>
-
-
-
                     <form class="py-10 px-5" method="POST" action="{{ route('password.email') }}" novalidate>
                         @csrf
 
@@ -34,9 +31,9 @@
                         </div>
 
                         <div class="flex flex-wrap ">
-                                <button type="submit" class="bg-teal-500 w-full hover:bg-teal-700 text-gray-100 
-                                p-3 focus:outline-none focus:shadow-outline uppercase font-bold">
-                                    {{ __('Send Password Reset Link') }}
+                                <button type="submit" class="bg-blue-600 w-full hover:bg-blue-500 text-gray-100 
+                                p-3 focus:outline-none focus:shadow-outline  font-bold">
+                                    {{ __('Restablecer mi Contraseña') }}
                                 </button>
                         </div>
                     </form>

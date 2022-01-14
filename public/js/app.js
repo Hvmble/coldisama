@@ -2077,14 +2077,14 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   },
   methods: {
     activar: function activar(e) {
-      if (e.target.classList.contains('bg-teal-400')) {
+      if (e.target.classList.contains('bg-blue-500')) {
         // el skill esta en activo
-        e.target.classList.remove('bg-teal-400'); // Eliminar del set de habilidades
+        e.target.classList.remove('bg-blue-500'); // Eliminar del set de habilidades
 
         this.habilidades["delete"](e.target.textContent);
       } else {
         // No esta activo, añadirlo
-        e.target.classList.add('bg-teal-400'); // Agregar al set de habilidades
+        e.target.classList.add('bg-blue-500'); // Agregar al set de habilidades
 
         this.habilidades.add(e.target.textContent);
       } // agregar las habilidades al input hidden
@@ -2095,7 +2095,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       document.querySelector('#skills').value = stringHabilidades;
     },
     verificarClaseActiva: function verificarClaseActiva(skill) {
-      return this.habilidades.has(skill) ? 'bg-teal-400' : '';
+      return this.habilidades.has(skill) ? 'bg-blue-500' : '';
     }
   }
 });
@@ -42145,13 +42145,14 @@ var render = function() {
   return _c("div", [
     _c(
       "ul",
-      { staticClass: "flex flex-wrap justify-center" },
+      { staticClass: "flex flex-wrap justify-center " },
       _vm._l(this.skills, function(skill, i) {
         return _c(
           "li",
           {
             key: i,
-            staticClass: "border border-gray-500 px-10 py-3 mb-3 rounded mr-4",
+            staticClass:
+              "border  text-gray-700 border-gray-500 px-10 py-3 mb-3 rounded mr-4",
             class: _vm.verificarClaseActiva(skill),
             on: {
               click: function($event) {
@@ -54709,8 +54710,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/juandelatorre/Desktop/devjobs/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/juandelatorre/Desktop/devjobs/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\laragon\www\empleocoldisama\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\empleocoldisama\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

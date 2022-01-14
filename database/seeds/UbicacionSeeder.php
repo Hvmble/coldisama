@@ -14,37 +14,12 @@ class UbicacionSeeder extends Seeder
     public function run()
     {
         DB::table('ubicacions')->insert([
-            'nombre' => 'Remoto',
+            'nombre' => 'CARTAGO,VALLE',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
         DB::table('ubicacions')->insert([
-            'nombre' => 'USA',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-        DB::table('ubicacions')->insert([
-            'nombre' => 'Canada',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-        DB::table('ubicacions')->insert([
-            'nombre' => 'México',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-        DB::table('ubicacions')->insert([
-            'nombre' => 'Colombia',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-        DB::table('ubicacions')->insert([
-            'nombre' => 'Argentina',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-        DB::table('ubicacions')->insert([
-            'nombre' => 'España',
+            'nombre' => 'REMOTO',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);

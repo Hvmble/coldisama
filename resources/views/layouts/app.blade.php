@@ -24,14 +24,14 @@
 <body class="bg-gray-200 min-h-screen leading-none">
 
     @if(session('estado'))
-        <div class="bg-teal-500 p-8 text-center text-white font-bold uppercase">
+        <div class="bg-green-500 p-8 text-center text-white font-bold uppercase">
             {{ session('estado') }}
         </div>
     @endif
 
 
     <div id="app">
-        <nav class="bg-gray-800 shadow-md py-6">
+        <nav class="bg-blue-600 shadow-md py-6">
             <div class="container mx-auto md:px-0">
                 <div class="flex items-center justify-around">
                     <a class="text-2xl text-white" href="{{ url('/') }}">
@@ -40,23 +40,23 @@
 
                     <nav class="flex-1 text-right">
                             @guest
-                                <a class="text-white no-underline hover:underline hover:text-gray-300 p-3" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <!--<button class="bg-green-500 p-2  border-gray-700 hover:bg-blue-500 border-double rounded-r-lg border-4"><a class="text-white no-underline p-2" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a></button>
                                 @if (Route::has('register'))
-                                    <a class="text-white no-underline hover:underline hover:text-gray-300 p-3" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                  <button class="bg-blue-600 p-2  border-blue-800 hover:bg-blue-500 rounded-r-lg border-2"> <a class="text-white no-underline p-3" href="{{ route('register') }}">{{ __('Registrate') }}</a></button> -->
                                 @endif
                             @else
-                                    <span class="text-gray-300 text-sm pr-4"> {{ Auth::user()->name }}  </span>
+                                    <span class="text-white uppercase pr-4"> {{ Auth::user()->name }}  </span>
 
                                     <a
                                         href="{{ route('notificaciones') }}"
-                                        class="bg-teal-500 rounded-full mr-2 px-3 py-1 font-bold text-sm text-white"
+                                        class="bg-green-500 hover:bg-green-400  rounded-full mr-2 px-3 py-1 font-bold text-sm text-white"
                                     > {{ Auth::user()->unreadNotifications->count() }} </a>
 
-                                    <a class="no-underline hover:underline text-gray-300 text-sm p-3" href="{{ route('logout') }}"
+                                    <button class="bg-blue-600 p-2  border-blue-800 hover:bg-blue-500 rounded-r-lg border-2"><a class="no-underline  text-gray-100 text-sm p-3" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                         document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
-                                    </a>
+                                    </a></button>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
@@ -67,10 +67,10 @@
             </div>
         </nav>
 
-        <div class="bg-gray-700">
-            <nav class="container mx-auto flex flex-col text-center md:flex-row  space-x-1">
+        <div class="bg-blue-700 justify-center flex flex-col text-center md:flex-row  space-x-1">
+            
                 @yield('navegacion')
-            </nav>
+            
         </div>
 
         <main class="mt-10 container mx-auto">

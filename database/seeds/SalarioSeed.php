@@ -14,26 +14,14 @@ class SalarioSeed extends Seeder
     public function run()
     {
         DB::table('salarios')->insert([
-            'nombre' => '0 - 1000 USD',
+            'nombre' => '0 - 908.526 COP ',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
         DB::table('salarios')->insert([
-            'nombre' => '1000 - 2000 USD',
+            'nombre' => '908.526 COP - 1.200.680 COP',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
-        DB::table('salarios')->insert([
-            'nombre' => '2000 - 4000 USD',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-        DB::table('salarios')->insert([
-            'nombre' => 'No Mostrar',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
-        ]);
-
-
     }
 }

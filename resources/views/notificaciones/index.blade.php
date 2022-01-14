@@ -29,7 +29,7 @@
 
                     <a
                         href="{{ route('candidatos.index', ['id' => $data['id_vacante']]) }}"
-                        class="bg-teal-500 p-3 inline-block text-xs font-bold uppercase text-white mb-4">
+                        class="bg-green-500 p-3 inline-block text-xs font-bold uppercase text-white mb-4">
                         Ver Candidatos
                     </a>
 

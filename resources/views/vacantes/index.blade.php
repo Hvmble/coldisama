@@ -13,18 +13,18 @@
         <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
         <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
             <table class="min-w-full">
-            <thead class="bg-gray-100 ">
+            <thead class="bg-blue-500 ">
                 <tr>
-                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-100 uppercase tracking-wider">
                     Titulo Vacante
                 </th>
-                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-100 uppercase tracking-wider">
                     Estado
                 </th>
-                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-100 uppercase tracking-wider">
                     Candidatos
                 </th>
-                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider">
+                <th class="px-6 py-3 border-b border-gray-200  text-left text-xs leading-4 font-medium text-gray-100 uppercase tracking-wider">
                     Acciones
                 </th>
                 </tr>
