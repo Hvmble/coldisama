@@ -223,7 +223,7 @@
             >Habilidades y Conocimientos: <span class="text-xs">(Elige al menos 3)</span> </label>
 
             @php
-            $skills = ['Jardinero', 'Construcción', 'Electricista']
+            $skills = ['Especialización','Pregrado','Maestria','Tecnologia','Jardinero', 'Construcción', 'Electrico']
             @endphp
             <lista-skills
                 :skills="{{ json_encode($skills) }}"

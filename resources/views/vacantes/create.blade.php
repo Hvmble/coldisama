@@ -162,7 +162,7 @@
                 class="text-xs">(Elige al menos 3)</span> </label>
 
         @php
-        $skills = ['Jardinero', 'Construcción', 'Electricista']
+        $skills = ['Especialización','Pregrado','Maestria','Tecnologia','Jardinero', 'Construcción', 'Electrico']
         @endphp
         <lista-skills :skills="{{ json_encode($skills) }}" :oldskills="{{ json_encode( old('skills') ) }}">
         </lista-skills>
