@@ -40,9 +40,9 @@
 
                     <nav class="flex-1 text-right">
                             @guest
-                                <button class="bg-green-500 p-2  border-gray-700 hover:bg-blue-500 border-double rounded-r-lg border-4"><a class="text-white no-underline p-2" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a></button>
+                                <!--<button class="bg-green-500 p-2  border-gray-700 hover:bg-blue-500 border-double rounded-r-lg border-4"><a class="text-white no-underline p-2" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a></button>
                                 @if (Route::has('register'))
-                                  <button class="bg-blue-600 p-2  border-blue-800 hover:bg-blue-500 rounded-r-lg border-2"> <a class="text-white no-underline p-3" href="{{ route('register') }}">{{ __('Registrate') }}</a></button>
+                                  <button class="bg-blue-600 p-2  border-blue-800 hover:bg-blue-500 rounded-r-lg border-2"> <a class="text-white no-underline p-3" href="{{ route('register') }}">{{ __('Registrate') }}</a></button> -->
                                 @endif
                             @else
                                     <span class="text-white uppercase pr-4"> {{ Auth::user()->name }}  </span>
